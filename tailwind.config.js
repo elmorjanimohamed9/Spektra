@@ -20,8 +20,16 @@ export default {
       fontFamily: {
         yatra: ['Yatra One', 'cursive'],
       },
+      zIndex: {
+        '60': '60',
+        '70': '70',
+        '80': '80',
+        '90': '90',
+        '100': '100',
+        '110': '110',
+        '120': '120',
+      }
     },
   },
   plugins: [],
 };
-
