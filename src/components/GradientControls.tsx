@@ -1,3 +1,4 @@
+import { useState } from 'react';
 import { ColorPicker } from './ColorPicker';
 import { GradientConfig, GradientType } from '../types/gradient';
 import { Sliders, Circle, Box, Trash2, Plus, Palette } from 'lucide-react';
@@ -23,6 +24,26 @@ export function GradientControls({
   onUpdatePosition,
   onRemoveColor,
 }: GradientControlsProps) {
+  const [activeColorPicker, setActiveColorPicker] = useState<string | null>(null);
+
+  const handleColorPickerToggle = (id: string) => {
+    setActiveColorPicker(activeColorPicker === id ? null : id);
+  };
+
+  const handleEyeDropper = async (id: string) => {
+    if ('EyeDropper' in window) {
+      try {
+        const eyeDropper = new (window as Window & { EyeDropper: new () => { open: () => Promise<{ sRGBHex: string }> } }).EyeDropper();
+        const result = await eyeDropper.open();
+        onUpdateColor(id, result.sRGBHex);
+      } catch (error) {
+        console.error('EyeDropper error:', error);
+      }
+    } else {
+      console.warn('EyeDropper API is not supported in this browser.');
+    }
+  };
+
   return (
     <div className="space-y-6 bg-white/90 dark:bg-gray-800/90">
       {/* Gradient Type Selection */}
@@ -132,12 +153,18 @@ export function GradientControls({
             >
               {/* Stop number and color picker - always in row */}
               <div className="flex items-center gap-3 mb-3 sm:mb-0">
-                <span className="text-sm font-medium bg-gradient-to-r from-purple-500 to-pink-500 text-white px-2 py-1 rounded-md w-8 text-center">
-                  #{index + 1}
+                <span className="inline-flex items-center justify-center w-6 h-6 text-xs font-semibold bg-gradient-to-br from-purple-500 to-pink-500 text-white rounded-full ">
+                  {index + 1}
                 </span>
                 <ColorPicker
+                  id={stop.id}
                   color={stop.color}
                   onChange={(color) => onUpdateColor(stop.id, color)}
+                  isActive={activeColorPicker === stop.id}
+                  onToggle={() => handleColorPickerToggle(stop.id)}
+                  onEyeDropper={() => handleEyeDropper(stop.id)}
+                  totalPickers={gradient.colorStops.length}
+                  index={index}
                 />
               </div>
 
@@ -178,11 +205,11 @@ export function GradientControls({
         {/* Add Color Stop Button */}
         <button
           onClick={() => onAddColor('#000000')}
-          className="w-full flex items-center justify-center gap-2 px-4 py-4 bg-gradient-to-r from-purple-500 to-pink-500 text-white rounded-xl hover:from-purple-600 hover:to-pink-600 transition-all duration-300 shadow-lg shadow-purple-500/25 group hover:scale-[1.02] active:scale-95"
+          className="w-full flex items-center justify-center gap-2 px-4 py-4 bg-gradient-to-r from-purple-500 to-pink-500 text-white rounded-xl hover:from-purple-600 hover:to-pink-600 shadow-lg shadow-purple-500/25"
         >
           <div className="relative">
-            <Plus className="w-5 h-5 transition-transform group-hover:rotate-180" />
-            <div className="absolute inset-0 animate-ping opacity-75">
+            <Plus className="w-5 h-5" />
+            <div className="absolute inset-0 opacity-75">
               <Plus className="w-5 h-5" />
             </div>
           </div>
