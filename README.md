@@ -82,7 +82,14 @@ npm run dev
 ### Product Hunt Launch
 Check out our Product Hunt launch and show your support!
 
-<iframe style="border: none;" src="https://cards.producthunt.com/cards/posts/702128?v=1" width="500" height="405" frameborder="0" scrolling="no" allowfullscreen></iframe>
+<p align="center">
+  <a href="https://www.producthunt.com/posts/spektra" target="_blank">
+    <img src="https://api.producthunt.com/widgets/embed-image/v1/featured.svg?post_id=702128&theme=light" 
+         alt="Spektra - Gradient generator | Product Hunt"
+         width="500" 
+         height="100" />
+  </a>
+</p>
 
 ### Spread the Word
 Help us grow by sharing Spektra with your network:
