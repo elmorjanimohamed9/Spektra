@@ -58,7 +58,7 @@ A modern, powerful, and intuitive gradient generator built with React and TypeSc
 ### Installation
 ```bash
 # Clone the repository
-git clone https://github.com/yourusername/spektra.git
+git clone https://github.com/elmorjanimohamed9/Spektra.git
 
 # Navigate to project directory
 cd spektra
