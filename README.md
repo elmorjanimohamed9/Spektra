@@ -4,9 +4,8 @@
   <img src="public/assets/images/logo-spektra.png" alt="Spektra Logo" width="200"/>
 </p>
 
-
 [![PRs Welcome](https://img.shields.io/badge/PRs-welcome-brightgreen.svg)](http://makeapullrequest.com)
-[![Visitors](https://visitor-badge.laobi.icu/badge?page_id=elmorjanimohamed9.Spektra)](https://github.com/elmorjanimohamed9/Spektra)
+[![Visitor Badge](https://visitor-badge.glitch.me/badge?page_id=elmorjanimohamed9.Spektra)](https://github.com/elmorjanimohamed9/Spektra)
 
 A modern, powerful, and intuitive gradient generator built with React and TypeScript. Create beautiful CSS gradients with ease across any device.
 
