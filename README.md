@@ -1,10 +1,7 @@
-
-
-```markdown
 # Spektra Gradient Generator 🎨
 
 <p align="center">
-  <img src="path_to_logo.png" alt="Spektra Logo" width="200"/>
+  <img src="public/assets/images/logo-spektra.png" alt="Spektra Logo" width="200"/>
 </p>
 
 [![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](https://opensource.org/licenses/MIT)
