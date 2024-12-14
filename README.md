@@ -5,7 +5,7 @@
 </p>
 
 [![PRs Welcome](https://img.shields.io/badge/PRs-welcome-brightgreen.svg)](http://makeapullrequest.com)
-[![Visitor Badge](https://visitor-badge.glitch.me/badge?page_id=elmorjanimohamed9.Spektra)](https://github.com/elmorjanimohamed9/Spektra)
+[![Hits](https://hits.seeyoufarm.com/api/count/incr/badge.svg?url=https%3A%2F%2Fgithub.com%2Felmorjanimohamed9%2FSpektra&count_bg=%2379C83D&title_bg=%23555555&icon=github.svg&icon_color=%23E7E7E7&title=visits&edge_flat=false)](https://github.com/elmorjanimohamed9/Spektra)
 
 A modern, powerful, and intuitive gradient generator built with React and TypeScript. Create beautiful CSS gradients with ease across any device.
 
