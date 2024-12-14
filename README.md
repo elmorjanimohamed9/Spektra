@@ -82,14 +82,7 @@ npm run dev
 ### Product Hunt Launch
 Check out our Product Hunt launch and show your support!
 
-<iframe style="border: none;" 
-        src="https://cards.producthunt.com/cards/posts/702128?v=1" 
-        width="500" 
-        height="405" 
-        frameborder="0" 
-        scrolling="no" 
-        allowfullscreen>
-</iframe>
+<iframe style="border: none;" src="https://cards.producthunt.com/cards/posts/702128?v=1" width="500" height="405" frameborder="0" scrolling="no" allowfullscreen></iframe>
 
 ### Spread the Word
 Help us grow by sharing Spektra with your network:
