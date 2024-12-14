@@ -13,16 +13,6 @@ A modern, powerful, and intuitive gradient generator built with React and TypeSc
   <img src="public/assets/images/Spektra-web-site.png" alt="Spektra Website" width="100%"/>
 </p>
 
-## 🌟 Featured On
-<p align="center">
-  <a href="https://www.producthunt.com/posts/spektra?embed=true&utm_source=badge-featured&utm_medium=badge&utm_souce=badge-spektra" target="_blank">
-    <img src="https://api.producthunt.com/widgets/embed-image/v1/featured.svg?post_id=702128&theme=light" 
-         alt="Spektra - Gradient generator | Product Hunt"
-         width="250"
-         height="54" />
-  </a>
-</p>
-
 ## ✨ Features
 
 ### 📱 Responsive Design
